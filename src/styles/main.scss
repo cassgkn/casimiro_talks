@@ -1,10 +1,24 @@
-body {
-    background-color: #575353;
-    
-    img {
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
     }
 }
 
