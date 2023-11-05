@@ -9,17 +9,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/Cass_Technology.svg" alt="Cass Tech Talks">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Marginal Tietê - Anhambi - Sao Paulo - SP
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2023 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta já a sua vaga
+                </a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Frontend</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatum nam odio magnam repudiandae iure nihil similique laboriosam accusamus, aperiam pariatur in tenetur ratione quo dolorem aliquam. Nulla, saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet tempora deserunt dolores culpa rerum repudiandae esse voluptate molestiae quaerat ipsa dolorum ab architecto quas nemo, corrupti similique! Ex, quisquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quis soluta sunt facere consequuntur, quae debitis rem, similique aperiam magni amet beatae rerum ipsum, consectetur ipsa nam perspiciatis quos ipsam.
+                </p>
+            </div>
+            <img class="event__image" src="/src/images/frontend.avif" alt="frontend">
+        </div>
+    </section>
+    <section class="backend backend--back">
+        <div class="container" data-aos="fade-left">
+            <img class="backend__image" src="/src/images/backend.jpg" alt="backend">
+            <div class="backend__detail">
+                <h2 class="backend__detail__title">Backend</h2>
+                <p class="backend__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatum nam odio magnam repudiandae iure nihil similique laboriosam accusamus, aperiam pariatur in tenetur ratione quo dolorem aliquam. Nulla, saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet tempora deserunt dolores culpa rerum repudiandae esse voluptate molestiae quaerat ipsa dolorum ab architecto quas nemo, corrupti similique! Ex, quisquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quis soluta sunt facere consequuntur, quae debitis rem, similique aperiam magni amet beatae rerum ipsum, consectetur ipsa nam perspiciatis quos ipsam.
 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="uiux uiux--design">
+        <div class="container" data-aos="fade-right">
+            <div class="uiux__detail">
+                <h2 class="uiux__detail__title">UX | UI Design</h2>
+                <p class="uiux__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatum nam odio magnam repudiandae iure nihil similique laboriosam accusamus, aperiam pariatur in tenetur ratione quo dolorem aliquam. Nulla, saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet tempora deserunt dolores culpa rerum repudiandae esse voluptate molestiae quaerat ipsa dolorum ab architecto quas nemo, corrupti similique! Ex, quisquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quis soluta sunt facere consequuntur, quae debitis rem, similique aperiam magni amet beatae rerum ipsum, consectetur ipsa nam perspiciatis quos ipsam.
+                </p>
+            </div>
+            <img class="uiux__image" src="/src/images/ux.avif" alt="ux design">
+        </div>
+    </section>
+    <section class="data data--design">
+        <div class="container" data-aos="fade-left">
+            <img class="data__image" src="/src/images/dados.avif" alt="ciência de dados">
+            <div class="data__detail">
+                <h2 class="data__detail__title">Data Science</h2>
+                <p class="data__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatum nam odio magnam repudiandae iure nihil similique laboriosam accusamus, aperiam pariatur in tenetur ratione quo dolorem aliquam. Nulla, saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet tempora deserunt dolores culpa rerum repudiandae esse voluptate molestiae quaerat ipsa dolorum ab architecto quas nemo, corrupti similique! Ex, quisquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quis soluta sunt facere consequuntur, quae debitis rem, similique aperiam magni amet beatae rerum ipsum, consectetur ipsa nam perspiciatis quos ipsam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

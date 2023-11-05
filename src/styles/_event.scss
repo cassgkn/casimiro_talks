@@ -1,0 +1,51 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--frontend {
+        background-color: variables.$blue1;
+        background-image: linear-gradient(43deg, variables.$blue1 0%, variables.$green1 50%, variables.$green2 100%);
+    }
+
+    .container {
+        display: flex;
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    &__detail {
+        margin-right: 40px;
+        &__title {
+            margin-bottom: 16px;
+            font-size: 38px;
+            font-weight: bold;
+            text-shadow: 2px 1px 1px  rgb(5, 8, 1);
+        }
+
+        &__description {
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__detail {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__image {
+        border-radius: 10px;
+    }
+}
