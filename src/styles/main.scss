@@ -31,3 +31,16 @@
     }
 }
 
+.footer {
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: variables.$red1;
+    background-image: linear-gradient(90deg, variables.$red1 0%, variables.$pink1 55%, variables.$pink2 100%);
+
+    @media (max-width: 640px) {
+        font-size: 14px;
+    }
+}
+
